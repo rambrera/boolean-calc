@@ -317,7 +317,6 @@ if(count($vars) > 0){
     }
     for($i = 1; $i < count($pascal[0]); $i++){
         for($j = 0; $j < count($pascal[$i-1])-1; $j++){
-            //Разрабы php горите в аду суки! Какого хуя у xor приоритет ниже чем у присвоения?
             $pascal[$i][$j] = ($pascal[$i-1][$j] xor $pascal[$i-1][$j+1]);
         }
     }
@@ -392,6 +391,6 @@ class Operator extends Token{
 ?>
 </div>
 </div>
-<div style="padding: 50px;" align="center">Ардесов Вячеслав, Салихов Дмитрий<p>© <a href="http://rambrera.com/?from=calc">Rambrera Studio</a> 2008-2016</div>
+<div style="padding: 50px;" align="center">© <a href="http://rambrera.com/?from=calc">Rambrera Studio</a> 2008-2016</div>
 </body>
 </html>
